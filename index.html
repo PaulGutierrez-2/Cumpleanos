@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+      transition: background 1s;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .dark {
+      background: #000;
+      color: #fff;
+    }
+
+    .slide {
+      display: none;
+      font-size: 1.8rem;
+      max-width: 90%;
+      animation: fadeIn 1s;
+    }
+
+    .active {
+      display: block;
+    }
+
+    img {
+      width: 80%;
+      max-width: 90vw;
+      max-height: 70vh;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      object-fit: contain;
+    }
+
+    #countdown {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .final-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .gif-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .gif-box {
+      width: 5vw;
+      position: absolute;
+      pointer-events: none;
+      /* El tamaño lo mantiene el .gif-box img */
+    }
+
+    .gif-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    }
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Ejemplo con tiempos personalizados -->
+  <div class="slide active" data-time="6">
+    <p>Hola bianquita, llevo horas haciendo esto</p>
+  </div>
+  <div class="slide" data-time="7">
+    <p>Podría solo escribirte un feliz cumpleaños por WhatsApp pero...</p>
+  </div>
+  <div class="slide" data-time="9">
+    <p>Pero q mi alma no me permite hacer una felicitación de mrd y aburrido a una persona importante</p>
+  </div>
+  <div class="slide" data-time="8">
+    <p>Los regalos repetitivos tmb son aburridos así q siempre hago regalos únicos q digamos ,:/</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Así q hice este pequeño sitio web</p>
+  </div>
+  <div class="slide" data-time="3">
+    <p>Chucha lo peor es q ya me quedé sin idea pa el otro año T-T</p>
+  </div>
+  <div class="slide" data-time="6">
+    <p>Pero bue te tengo una torta pa ti</p>
+  </div>
+  <div class="slide dark-bg" data-time="10">
+    <p>Una torta 100% digital, Mira esta maravilla carajo, probablemente te da hambre pero ni cagando vas a poder comer
+    </p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Torta con vela">
+  </div>
+  <div class="slide" data-time="5">
+    <p>Bue puedes lamer el celu cm perro baboso 🤤</p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Torta con vela">
+  </div>
+  <div class="slide" data-time="5">
+    <p>A ver, como de costumbre tienes q soplar las velas 🎂</p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Torta con vela">
+  </div>
+  <div class="slide" data-time="12">
+    <p style="font-size: 5vw;">Se q es algo inmaduro soplar frente a un dispositivo q contiene una estructura de varias capas que incluye una
+      fuente de retroiluminación (como LEDs), filtros de polarización, una capa de cristal líquido, filtros de color y
+      una matriz de transistores para controlar individualmente cada píxel, así como la carcasa y electrónica de
+      soporte. Los píxeles, que son las unidades básicas de color y luz, crean la imagen final que el usuario ve.(la
+      pantalla)</p><p>🤓☝️</p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Pantalla">
+  </div>
+  <div class="slide" data-time="7">
+    <p>Pero todos tenemos a un niño interior, así q a quien chucha le importa, de todas formas lo vas hacer pa q salga bien este sitio web</p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Torta con vela">
+  </div>
+  <div class="slide" data-time="6">
+    <p>Así q necesito q respires hondo 😮‍💨</p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Respira">
+  </div>
+  <div class="slide" data-time="6">
+    <p>Pero BIEN hondo csm 💨</p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Respira fuerte">
+  </div>
+  <div class="slide" data-time="8">
+    <p>Listo a la cuenta de 5</p>
+    <div id="countdown"></div>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Torta con vela">
+  </div>
+  <div class="slide" data-time="6">
+    <p>¡¡SOPLAAAA!! 🎉</p>
+    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?fm=jpg&q=60&w=1200" alt="Torta con vela">
+  </div>
+  <div class="slide light-bg" data-time="6">
+    <p>...</p><img src="https://www.shutterstock.com/image-photo/wedding-cake-that-fell-floor-260nw-1744069541.jpg"
+      alt="Torta arruinada">
+  </div>
+  <div class="slide" data-time="5">
+    <p>Bue te pasaste</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Bah q importa, ni q vas a comer la torta </p>
+  </div>
+  <div class="slide" data-time="6">
+    <p>Bue, ¡FELIZ CUMPLEAÑOS! 🎂🎉</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Estoy contento de ti</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Por fin vas a envejecer cm yo 🗿</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Siempre has sido mi desgraciada favorita &lt;3</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Tengo muchas ganas de bullearte en persona, en carne y huesos</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Pero esta distancia de mrd, estoy impaciente</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Bue espero q te lo pases muy bien hoy</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Vas muy BIEN en lo q estás haciendo</p>
+  </div>
+  <div class="slide" data-time="5">
+    <p>Sigue adelante</p>
+  </div>
+  <div class="slide" data-time="8">
+    <p>Te quiero mucho querida 💖</p>
+  </div>
+  <div class="slide" id="gif-slide">
+    <div class="gif-container">
+      <div class="gif-box"><img src="https://media1.tenor.com/m/5BYK-WS0__gAAAAC/cool-fun.gif" alt="gif1"></div>
+      <div class="gif-box"><img src="https://media.tenor.com/Y4AzOUrW5GQAAAAM/gato-moviendo-la-cabeza-al-ritmo-de-la-musica.gif" alt="gif2"></div>
+      <div class="gif-box"><img src="https://es.vidnoz.com/bimg/el-gato-bailando-gif-en-usagif.gif" alt="gif3"></div>
+      <div class="gif-box"><img src="https://i.pinimg.com/originals/a9/fb/d4/a9fbd437bf2255bf60b6bff1fabf4bed.gif" alt="gif4"></div>
+      <div class="gif-box"><img src="https://usagif.com/wp-content/uploads/gifs/dancing-cat-39.gif" alt="gif5"></div>
+      <div class="gif-box"><img src="https://i.pinimg.com/originals/ab/43/ac/ab43ac3b607ebdfd2995c0a2c0b1a63d.gif" alt="gif6"></div>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+    let timer;
+
+    function showSlide(i) {
+      slides.forEach(s => s.classList.remove('active'));
+      slides[i].classList.add('active');
+
+      // Fondo oscuro o claro
+      if (slides[i].classList.contains('dark-bg')) {
+        document.body.classList.add('dark');
+      } else if (slides[i].classList.contains('light-bg')) {
+        document.body.classList.remove('dark');
+      }
+
+      // Contador
+      if (slides[i].querySelector("#countdown")) {
+        let count = 5;
+        const countdownEl = document.getElementById("countdown");
+        countdownEl.textContent = count;
+        const interval = setInterval(() => {
+          count--;
+          countdownEl.textContent = count;
+          if (count === 0) clearInterval(interval);
+        }, 1000);
+      }
+
+      // Si es la slide de gifs, usa el posicionamiento en forma de estrella
+      if (slides[i].id === "gif-slide") {
+        positionGifsInStar(slides[i]);
+      }
+
+      // Tiempo personalizado
+      const duration = slides[i].dataset.time ? parseInt(slides[i].dataset.time) * 1000 : 5000;
+      clearTimeout(timer);
+      timer = setTimeout(() => nextSlide(), duration);
+    }
+    
+    // --- NUEVA FUNCIÓN PARA POSICIONAMIENTO EN FORMA DE ESTRELLA ---
+    function positionGifsInStar(slideElement) {
+        const gifBoxes = slideElement.querySelectorAll('.gif-box');
+        const numGifs = gifBoxes.length;
+        const boxWidth = 140; 
+        const boxHeight = 140;
+
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+
+        // Centro de la pantalla
+        const centerX = vw / 2;
+        const centerY = vh / 2;
+        
+        // Radio de la estrella (ajustado para que quepa bien en la pantalla)
+        const radius = Math.min(vw, vh) * 0.35; // 35% de la dimensión más pequeña
+
+        // Coordenadas de los 5 puntos de la estrella (polígono regular)
+        const starPoints = [];
+        
+        // Bucle para calcular los 5 puntos
+        for (let j = 0; j < 5; j++) {
+            // Ángulo en radianes. Empezamos a -90 grados (arriba) y sumamos 72 grados (360/5) por punto.
+            const angle = (j * 72 - 90) * (Math.PI / 180);
+            
+            const x = centerX + radius * Math.cos(angle);
+            const y = centerY + radius * Math.sin(angle);
+            
+            starPoints.push({ x: x, y: y });
+        }
+        
+        // Agregamos un punto central
+        starPoints.push({ x: centerX, y: centerY });
+
+        // Posiciona cada GIF en un punto de la estrella
+        gifBoxes.forEach((box, idx) => {
+            if (starPoints[idx]) {
+                // Posición ajustada para que el centro del GIF caiga en el punto de la estrella
+                const left = starPoints[idx].x - (boxWidth / 2);
+                const top = starPoints[idx].y - (boxHeight / 2);
+                
+                box.style.left = `${left}px`;
+                box.style.top = `${top}px`;
+                box.style.width = `${boxWidth}px`;
+                box.style.height = `${boxHeight}px`;
+            }
+        });
+    }
+    // --- FIN DE LA FUNCIÓN DE ESTRELLA ---
+
+    function nextSlide() {
+      if (index < slides.length - 1) {
+        index++;
+        showSlide(index);
+      } else {
+        // Detiene el timer al llegar al final
+        clearTimeout(timer);
+      }
+    }
+
+    // Asegúrate de que los GIFs se reposicionen si se redimensiona la ventana
+    window.addEventListener('resize', () => {
+        if (slides[index] && slides[index].id === "gif-slide") {
+            positionGifsInStar(slides[index]);
+        }
+    });
+
+    showSlide(index);
+  </script>
+</body>
+
+</html>
